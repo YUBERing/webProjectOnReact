@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Тестовое задание</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+    </head>
+    <body>
+        <div id="begin">
+            <div class="topheading">
+                <p class="podpis">
+                    Карточки
+                </p>
+                <button id="newmap">Новая карточка</button>
+            </div>
+            <div id="listmap" class="listmap">
+
+            </div>
+        </div>
+        
+        <div id="end">
+            <p class="podpis">
+                Маршрут
+            </p>
+            <div id="route" class="route">
+
+            </div>
+        </div>
+
+        <div class="modalback" id="modalback">
+            <div class="modalfront">
+                <div class="header">
+                    <h1>Карточка</h1>
+                    <button id="exit">&times;</button>
+                </div>
+                <div>
+                    <div class="mainplace">
+                        <p>Полезная информация о маршруте</p>
+                        <textarea required name="" cols="60" rows="12" id="description"></textarea> 
+                    </div>
+                    <div class="way">
+                        <p>Населенные пункты</p><br>
+                        <input required type="text" id="from" placeholder="От">
+                        <input required type="text" id="before" placeholder="До">                    
+                    </div>
+                </div>
+                <div id="buttons" class="buttons">
+                    <button id="cancel">Отменить</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>

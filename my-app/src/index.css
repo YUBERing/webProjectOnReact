@@ -1,13 +1,116 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.podpis{
+  border-bottom: 3px solid black;
+  width:80%;
+  font-size: 30px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.newMap{
+  box-sizing: border-box;
+  height: 50px;
+  margin-top: 50px;
+}
+
+.topheading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button{
+  display: block;
+
+}
+.listmap{
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  height:40%;
+}
+.route{
+  display: flex;
+  flex-direction: column;
+  height:40%;
+}
+
+.modalback{
+  display: block;
+  position:fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  overflow: auto;
+}
+
+.modalfront{
+  position: fixed;
+  background-color: white;
+  width: 600px;
+  height: 600px;
+  z-index: 99999;
+  margin:auto;
+  top: 20%;
+  left:20%;
+  padding: 20px;
+}
+
+.header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+}
+
+.mainplace{
+  height: 40%;
+  width: 100%;
+}
+
+.way{
+  height: 30%;
+  width: 100%;
+}
+
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 10%;
+  width: 100%;
+}
+
+.route{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
+
+.map{
+  display: flex;
+  width:800px;
+  height: 70px;
+  justify-content: space-between;
+}
+
+.map div:nth-child(2){
+  display: flex;
+}
+
+.map .div{
+  margin-right: 50px;
+}
+.rem{
+  display:none;
+  margin:10px;
+}
+.map:hover .rem{
+  display:block;
+}
+
+.newMap{
+  width:150px;
 }
